@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What kind of decision maker are you? – GDMS quiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+
+  <section id="intro">
+    <h1>What kind of decision maker are you?</h1>
+    <p class="lede">25 statements about how you make important decisions, based on the General Decision-Making Style (GDMS) questionnaire by Scott and Bruce (1995).</p>
+    <p>Think about important decisions in your life, not everyday choices. For each statement, say how much you agree. There are no right or wrong answers, and nothing you enter is saved or sent anywhere.</p>
+    <div class="scale-preview" aria-hidden="true">
+      <span>1 Strongly disagree</span><span>2 Disagree</span><span>3 Neutral</span><span>4 Agree</span><span>5 Strongly agree</span>
+    </div>
+    <button class="btn" id="startBtn">Start the quiz</button>
+  </section>
+
+  <section id="quiz" class="hidden" aria-live="polite">
+    <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+    <div class="count" id="count"></div>
+    <p class="statement" id="statement"></p>
+    <fieldset>
+      <legend id="legend">Your answer</legend>
+      <div class="options" id="options"></div>
+    </fieldset>
+    <div class="nav">
+      <button class="btn ghost" id="backBtn">Back</button>
+      <button class="btn" id="nextBtn" disabled>Next</button>
+    </div>
+    <p class="hint">Tip: press 1 to 5 on your keyboard to answer.</p>
+  </section>
+
+  <section id="results" class="hidden">
+    <p class="lede" id="verdictLead">Your strongest style is</p>
+    <p class="verdict" id="verdict"></p>
+    <p id="verdictText"></p>
+    <div class="profile" id="profile" aria-label="Your scores per style, from 1 to 5"></div>
+    <div class="note">
+      <p>Scott and Bruce found that people use a combination of styles rather than just one (p. 829). Read your result as a profile across all five styles. Your highest score shows the style you lean on most, not the only one you use.</p>
+    </div>
+    <div class="descriptions" id="descriptions"></div>
+    <button class="btn" id="restartBtn">Take the quiz again</button>
+  </section>
+
+</main>
+
+<footer>
+  <p>Items and style definitions are from Scott and Bruce (1995). The statements come from Table 1 (pp. 825–826); the response format from pp. 821–822; the definitions of the rational, intuitive, dependent and avoidant styles from p. 820; and the definition of the spontaneous style from p. 823. Table 1 prints four rational items, although the text reports five per scale (p. 824). The fifth rational item used here, "I plan my important decisions carefully," comes from later published versions of the GDMS (e.g., Bodin, Chermack &amp; Coons, 2016).</p>
+  <p>Scores are the average of the items for each style, from 1 to 5. This quiz is for learning and self-reflection. It is not a clinical or diagnostic tool.</p>
+  <p class="ref">Scott, S. G., &amp; Bruce, R. A. (1995). Decision-making style: The development and assessment of a new measure. <em>Educational and Psychological Measurement, 55</em>(5), 818–831. <a href="https://doi.org/10.1177/0013164495055005017">https://doi.org/10.1177/0013164495055005017</a></p>
+  <p class="ref">Bodin, R., Chermack, T. J., &amp; Coons, L. M. (2016). The effects of scenario planning on participant decision-making style: A quasi-experimental study of four companies. <em>Journal of Futures Studies, 20</em>(4), 21–40. <a href="https://doi.org/10.6531/JFS.2016.20(4).A21">https://doi.org/10.6531/JFS.2016.20(4).A21</a></p>
+  <p>© 2026 Hugo Krul. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
